@@ -1,0 +1,151 @@
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+
+@media (min-width: 0px) {
+    .col-xs{
+         width: 100%;
+        display: flex;
+       }
+    .a-contacto{
+        width: 25%;
+    }
+    .contacto-design1{
+        display: none;
+    }
+    .contacto-design2{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 578px){
+    .col-sm{
+        width: 50%;
+        display: flex; 
+        flex-direction: column;
+        padding: 1rem;  
+    }
+    
+    .contacto-design2{
+        display: none;
+    }
+    .design-2{
+        margin-bottom: 1rem;
+    }
+    .list-design2{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+    .design{
+        padding: 1rem;
+    }
+    .div-habilidades{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .div-habilidades p{
+        flex-direction: column;
+    }
+    
+}
+@media (min-width: 768px){
+    
+    
+    .col-md{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-md-3{
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+    }
+    .col-md-6{
+        display: flex;
+        width: 50%;    
+    }
+    .div-habilidades{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        
+    }
+    .a-contacto{
+        width: 7rem;
+        height: 2rem;
+        text-align: center;
+    }
+    .contacto-design1{
+        display: flex;
+    }
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: gray;
+    }
+    .hamb{
+        display: none;
+    }
+    .menu a{
+        background-color: #fff;
+        color: #423f40;
+    }
+    .header{
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        width: 100%;
+    }
+    .list-design2{
+        padding: 0;
+    }
+}
+@media (min-width: 992px){}
+@media (min-width: 1200px){
+    .col-xl{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-xl-12{
+        width: 100%;
+    }
+    .col-xl-6{
+        width: 50%;
+    }
+    .div-experience{
+        margin-bottom: 3rem;
+    }
+    .portafolio{
+        padding-left: 1rem;
+    }
+    .contacto-cl-xl{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1400px){}
