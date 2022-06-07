@@ -19,7 +19,12 @@
     .col-xs{
          width: 100%;
         display: flex;
-       }
+    }
+    .col-xs-6{
+        width: 50%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
     .a-contacto{
         width: 25%;
     }
@@ -49,6 +54,11 @@
     .contacto-design-2-xs{
         justify-content: center;
         width: 7rem;
+    }.portafolio-header{
+        display: flex;
+        text-align: start;
+        flex-direction: column;
+        padding: 1rem;
     }
 }
 @media (min-width: 578px){
@@ -62,7 +72,11 @@
         width: 100%;
         flex-direction: row;
     }
-    
+    .col-sm-6{
+        width: 50%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
     .design-2{
         margin-bottom: 1rem;
     }
@@ -103,6 +117,14 @@
    .contacto-sm-pad{
        padding-top: 1rem;
    }
+   .contact-content-left{
+       display: flex;
+       justify-content: flex-end;
+   }
+   .contact-content-right{
+       display: flex;
+       justify-content: flex-start;
+   }
     
 }
 @media (min-width: 768px){
@@ -118,6 +140,16 @@
         flex-direction: column;
         
     }
+    .portafolio-header{
+        display: flex;
+        text-align: start;
+        padding-left: 2rem;
+    }
+    .contact-header{
+        display: flex;
+        text-align: start;
+        padding-left: 2rem;
+    }
     .col-md-6{
         display: flex;
         width: 50%;    
@@ -126,12 +158,6 @@
         width: 100%;
         flex-direction: row;
     }
-    /* .div-habilidades{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        
-    } */
     .contacto-design2{
         display: none;
     }
@@ -143,33 +169,24 @@
     .contacto-design1{
         display: flex;
     }
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
+    #ul-nav li{
+        display: inline-block;
+        margin-left: 1rem;
     }
-    .menu li{
-        float: left;
-    }
-    .menu a:hover{
+    #ul-nav{
+        display: block;
+        text-align: right;
         background-color: transparent;
-        color: gray;
+        position: static;
+        padding: 0;
     }
-    .hamb{
+    nav button{
         display: none;
     }
-    .menu a{
-        background-color: #fff;
+    nav a{
         color: #423f40;
     }
-    .header{
-        display: flex;
-        flex-direction: row-reverse;
-        position: relative;
-        width: 100%;
-    }
+ 
    
     .image-design{
         width: 100%;
@@ -185,7 +202,11 @@
         width: 1rem;
     }
 }
-@media (min-width: 992px){}
+@media (min-width: 992px){
+    #ul-nav li{
+        margin-left: 3rem;
+    }
+}
 @media (min-width: 1200px){
     .col-xl{
         display: flex;
@@ -214,6 +235,8 @@
     .card-last-xl{
         padding-right: 30%;
     }
-   
+    #ul-nav li{
+        margin-left: 5rem;
+    }
 }
 @media (min-width: 1400px){}

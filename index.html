@@ -15,27 +15,32 @@
 <body>
 <div class="row">
 
-    <header>
-        <a href="#" class="logo">JM</a>
-        <input class="side-menu" type="checkbox"  id="side-menu">
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-        <nav class="nav">
-            <ul class="menu">
-                <li><a  href="#Home-id">Home</a></li>
-                <li><a  href="#Experiencia-id">Experiencia y habilidades</a></li>
-                <li><a  href="#Portafolio-id">Portafolio</a></li>
-                <li><a  href="#Contacto-id">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <button onclick="toggleMenu()">
+            <img src="./image/menu 1.svg" alt="">
+        </button>
+        <ul class="hidden " id="ul-nav">
+            <li>
+                <a  href="#Home-id">Home</a> 
+            </li>
+            <li>
+                <a  href="#Experiencia-id">Experiencia y habilidades</a> 
+            </li>
+            <li>
+                <a  href="#Portafolio-id">Portafolio</a>
+            </li>
+            <li>
+                <a  href="#Contacto-id">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+   
     <div class="row col-md" id="Home-id">
         <div class="design col-md-3 ">
             <h1 class="col-xs design-sm">
                 Design experience
             </h1>
-            <!-- <h1 class="col-xs ">
-                experience
-            </h1> -->
+            
             <p class="col-xs lorem design-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
@@ -138,19 +143,19 @@
         </div>
          
     </div>
-    <div class="row portafolio " id="Portafolio-id">
-        <div class="portafolio col-xs">
+    <div class="row portafolio col-12 " id="Portafolio-id">
+        <div class="portafolio col-12 col-xs portafolio-header">
             <h2>Portafolio</h2>
         </div>
-        <div class="col-md">
-            <div class="portafolio">
+        <div class="col-md portafolio-header">
+            <div class="portafolio col-12 portafolio-content">
                 <p >Beauty App</p>
                 <img src="./image/beauty.jpg" alt="beauty app"></div>
-            <div class="portafolio">
+            <div class="portafolio col-12 portafolio-content">
                 <p>Training App</p>
                 <img src="./image/training.jpg" alt="training app">
             </div>
-            <div class="portafolio">
+            <div class="portafolio col-12 portafolio-content">
                 <p>Hotel App</p>
                 <img src="./image/hotel.jpg" alt="Hotel App">
             </div>
@@ -158,46 +163,39 @@
         
         
     </div>
-    <div class=" row col-xs col-md col-sm-12" id="Contacto-id">
-        <div class="col-xs">
-            <h2>Contacto</h2>
+    <div class="row col-12">
+        <div class="col-12 contact-header">
+            <h2>
+                Contacto
+            </h2>
         </div>
-        <div class="col-xs contacto-cl col-xl-12 contacto-sm-pad">
-            <div class=" contacto-last card-first card-first-xl">
-                <div class="back-contact">
-                    <img class="back-contact-img" src="./image/phone 3.svg" alt="Telefono">
-                </div>
-                
-                <p class="contacto-first">
-                    <strong>
-                        Numero celular
-                    </strong>
-                </p>
-                <p class="contacto-second">
-                    8094218773
-                </p>
-            </div>
-            <div class="contacto-cl contacto-last card-last card-last-xl ">
-                <div class="back-contact">
-                    <img class="back-contact-img" src="./image/mail 3.svg" alt="Email">
-                </div>
-                <div>
-                    <p class="contacto-first">
-                        <strong>
-                            Email
-                        </strong>
-                    </p>
-                    <p class="contacto-second">
-                        Lebron1343@gmail.com
-                    </p>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-
     </div>
+    <div class="row col-12">
+        <div class="col-12 col-xs-6">
+            <div class="contact-content-left">
+                <div class="contact-card">
+                    <div class="contact-image">
+                        <img src="./image/phone 3.svg" alt="Telefono">
+                    </div>
+                    <p>Numero celular</p>
+                    <p>+1803445566</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xs-6">
+            <div class="contact-content-right">
+                <div class="contact-card">
+                    <div class="contact-image">
+                        <img src="./image/mail 3.svg" alt="">
+                    </div>
+                    <p>Correo electronico</p>
+                    <p>academlo@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
 </div>
+<script src="./script.js"></script>
 </body>
 </html>

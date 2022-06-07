@@ -1,8 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    padding-left: 0.05rem;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    max-width: 100%;
     
 }
 
@@ -15,107 +17,45 @@ body{
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10%;
+   
 }
 
 a{
     text-decoration: none;
     color: #222222;
 }
-
-ul{
-    list-style: none;
-}
-
-.header{
-    background-color: black;
-    box-shadow: 1px 1px 5px 0px gray;
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-.logo{
-    display: inline-block;
-    color: white;
-    font-size: 60px;
-    margin-left: 20px;
-}
-
-.nav{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: #222222;
-    overflow: hidden;
-    text-align: right;
-}
-
-.menu a{
-    display: block;
-    padding: 30px;
-    color: white;
-    text-align: right;
-}
-
-.menu a:hover{
-    background-color: gray;
-}
-
-.nav{
-    max-height: 0;
-    transition: max-height .5s ease-out;
-    text-align: right;
-}
-
-.hamb{
-    cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-    position: relative;
-    left: 100%;
-}
-
-.hamb-line{
-    background: #FCDA68;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
-}
-
-.hamb-line::before, .hamb-line::after{
-    background: #FCDA68;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-.hamb-line::before{
-    top: 5px;
-}
-.hamb-line::after{
-    top: -5px;
-}
-.side-menu{
+.hidden{
     display: none;
+}
+nav{
     text-align: right;
+    padding: 1rem 3rem;
+    /* background-color: #423f40; */
+    position: relative;
+    width: 99%;
 }
-.side-menu:checked ~ nav{
-    max-height: 100%;
+nav ul{
+    list-style: none;
+    text-align: center;
+    position: absolute;
+    background-color: #8e7bef;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin: 0;
+    z-index: 999;
+   padding: 1rem;
 }
-.side-menu:checked ~ .hamb .hamb-line{
-    background: transparent;
+nav ul li{
+    padding: 0.5rem 0;
 }
-.side-menu:checked ~ .hamb .hamb-line::before{
-    transform: rotate(-45deg);
-    top: 0;
+nav a{
+    color: white;
+    padding: 0.5rem 0;
 }
-.side-menu:checked ~ .hamb .hamb-line::after{
-    transform: rotate(45deg);
-    top: 0;
+nav button{
+    border: 0;
+    background-color: transparent;
 }
 .design{
     
@@ -143,6 +83,21 @@ ul{
 .experience-color{
     background-color: #FCDA68;
 }
+.back-list{
+    background-color: #8e7bef;
+    border-radius: 50%;
+    margin: 0.5rem;
+    width: 15%;
+    height: 3rem;
+    justify-content: center
+}
+.link-contacto{
+    height: 2rem;
+    justify-content: center;
+}
+tr, td{
+    padding: 1rem;
+}
 .table-list{
     border-collapse: collapse;
     
@@ -165,46 +120,33 @@ h1, h2{
     margin-bottom: 5%;
     color: #8e7bef;
 }
-#Contacto-id h2{
-    margin-bottom: 10%;
+.portafolio-content{
+    max-width: 100%;
 }
-.contacto-cl{
-    padding-left: 10%;
+.contact-header{
+    text-align: center;
 }
-.contacto-first{
-    color: #222222;
-}
-.contacto-second{
-    color: #b9b3ae;
-}
-tr, td{
-    padding: 1rem;
-}
-.back-list{
-    background-color: #8e7bef;
-    border-radius: 50%;
-    margin: 0.5rem;
-    width: 15%;
-    height: 3rem;
-    justify-content: center
-}
-.link-contacto{
-    height: 2rem;
+.contact-content-left{
+    display: flex;
     justify-content: center;
 }
-.back-contact{
-    background-color: #f9f5f2;
-    border-radius: 0.5rem;
+.contact-content-right{
+    display: flex;
+    justify-content: center;  
+}
+.contact-card{
     text-align: center;
-    width: 7rem;
+    width: 100%;
+
 }
 
-.back-contact-img{
-    padding: 0.75rem;
-}
-.card-last{
-    margin-right: 4rem;
-}
-.card-first{
-    margin-left: 2rem;
+.contact-image{
+    background-color: #f9f5f2;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 3rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
