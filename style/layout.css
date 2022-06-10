@@ -77,6 +77,11 @@
         padding: 1rem;
         box-sizing: border-box;
     }
+    .col-sm-grid{
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    }
     .design-2{
         margin-bottom: 1rem;
     }
