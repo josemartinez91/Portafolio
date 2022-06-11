@@ -149,6 +149,7 @@
         display: flex;
         text-align: start;
         padding-left: 2rem;
+        flex-direction: row;
     }
     .contact-header{
         display: flex;
@@ -202,10 +203,18 @@
     .habilidades-content{
         width: 25%;
         flex-direction: row;
+        text-align: center;
     }
     .img-design-md{
         width: 1rem;
     }
+    .col-md-4{
+        width: 33.33%;
+    }
+    .col-md-habilidades{
+        text-align: center;
+    }
+    
 }
 @media (min-width: 992px){
     #ul-nav li{
