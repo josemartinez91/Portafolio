@@ -54,6 +54,7 @@
     .contacto-design-2-xs{
         justify-content: center;
         width: 7rem;
+        align-items: center;
     }.portafolio-header{
         display: flex;
         text-align: start;
@@ -81,12 +82,21 @@
         display: grid;
         width: 100%;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-sm-flex{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .design-2{
         margin-bottom: 1rem;
     }
     .design-sm{
-        width: 50%;
+        width: 75%;
     }
     .list-design2{
         display: flex;
@@ -103,7 +113,18 @@
     }
    .habilidades-content{
        width: 50%;
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
    }
+   .experience-table-sm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
    .image-design{
        width: 100%;
    }
@@ -130,8 +151,9 @@
        display: flex;
        justify-content: flex-start;
    }
-    
 }
+    
+
 @media (min-width: 768px){
     
     
