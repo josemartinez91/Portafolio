@@ -69,6 +69,11 @@ nav button{
     color: white;
 
 }
+.contacto-design-2-xs{
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
 .lorem{
     color: #423f40;
 }
@@ -149,4 +154,13 @@ h1, h2{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.habilidades-container{
+    width: 100%;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: inherit;
 }

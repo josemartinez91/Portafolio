@@ -26,7 +26,7 @@
         box-sizing: border-box;
     }
     .a-contacto{
-        width: 25%;
+        width: 100%;
     }
     .contacto-design1{
         display: none;
@@ -51,11 +51,8 @@
         text-align: center;
         padding-top: 0.75rem;
     }
-    .contacto-design-2-xs{
-        justify-content: center;
-        width: 7rem;
-        align-items: center;
-    }.portafolio-header{
+    
+    .portafolio-header{
         display: flex;
         text-align: start;
         flex-direction: column;
@@ -131,7 +128,7 @@
    .contacto-design2{
     display: flex;
     justify-content: center;
-    width: 7rem;
+    width: 100%;
     height: 15%;
    }
    .link-contacto{
@@ -237,6 +234,9 @@
         width: 33.33%;
     }
     .col-md-habilidades{
+        text-align: center;
+    }
+    .col-experience-md{
         text-align: center;
     }
     
